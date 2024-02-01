@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A Fabric script based on the file 1-pack_web_static.py that distributes an
+A fabric script based on the file 1-pack_web_static.py that distributes
 archive to the web servers
 """
 
