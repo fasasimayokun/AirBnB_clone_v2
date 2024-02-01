@@ -28,6 +28,6 @@ def do_clean(number=0):
 
     with cd("/data/web_static/releases"):
         archives = run("ls -tr").split()
-        archives = [a for a in archives if "web_static_" in a]
-        [archives.pop() for i in range(number)]
-        [run("rm -rf ./{}".format(a)) for a in archives]
+        archives = [ab for ab in archives if "web_static_" in ab]
+        [archives.pop() for ix in range(number)]
+        [run("rm -rf ./{}".format(ab)) for ab in archives]
