@@ -4,8 +4,8 @@ A fabric script based on the file 1-pack_web_static.py that distributes
 archive to the web servers
 """
 
-from os.path import exists
 from fabric.api import put, run, env
+from os.path import exists
 env.hosts = ['54.157.157.93', '54.167.173.197']
 
 
