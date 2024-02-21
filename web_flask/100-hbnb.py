@@ -6,6 +6,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
+# it handles the url ending with /hbnb
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """render states, amenities and places in the route"""

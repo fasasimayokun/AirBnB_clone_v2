@@ -11,8 +11,7 @@ from sqlalchemy.orm import relationship
 
 
 class State(BaseModel, Base):
-    """Represents a state for a MySQL database.
-
+    """it represents a state for a MySQL database.
     Inherits from SQLAlchemy Base and links to the MySQL table states.
 
     Attributes:
@@ -28,10 +27,10 @@ class State(BaseModel, Base):
     else:
         @property
         def cities(self):
-            """Get a list of City instances with
+            """it gets a list of City instances with
                 state_id equals to the current State.id.
 
-            This is a getter attribute for FileStorage
+            it is a getter attribute for FileStorage
                 relationship between State and City.
             """
             city_list = []

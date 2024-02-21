@@ -25,7 +25,7 @@ association_table = Table("place_amenity", Base.metadata,
 
 
 class Place(BaseModel, Base):
-    """Represents a Place for a MySQL database.
+    """it represents a Place for a MySQL database.
 
     Inherits from SQLAlchemy Base and links to the MySQL table places.
 

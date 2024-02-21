@@ -18,6 +18,7 @@ def teardown(exception):
     storage.close()
 
 
+# it handles the url ending with /states
 @app.route("/states", strict_slashes=False)
 def states():
     """Displays a HTML page with the states"""
@@ -25,6 +26,7 @@ def states():
     return render_template("9-states.html", state=states)
 
 
+# it handles the url ending with /states/<id>
 @app.route("/states/<id>", strict_slashes=False)
 def states_id(id):
     """Displays a HTML page with the state's id"""
